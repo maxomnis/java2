@@ -2,17 +2,21 @@ package classandobject;
 
 
 public class Puppy {
-    int pupyAge;
+    private int pupyAge;
 
-    public Puppy(String name) {
+    /**
+     * 构造器不能写返回值类型，void也不行，因为构造函数是隐式返回的
+     * @param name 名字
+     */
+    private Puppy(String name) {
         System.out.println("Puppy name is" + name);
     }
 
-    public void setAge(int age) {
+    private void setAge(int age) {
         pupyAge = age;
     }
 
-    public int getAge() {
+    private int getAge() {
         System.out.println("puppy's age is:" + pupyAge);
         return pupyAge;
     }
