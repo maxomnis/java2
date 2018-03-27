@@ -18,7 +18,7 @@ public class TestString {
         /*
          "=="不是比较的内存地址吗？为什么这里的str1,str2会相等呢？这就是Java的特性，
          如果是用同一个字面量（比如这里的hello）来初始化，那么只会创建一个String对象，而这两个变量都会引用它,
-         所有这里的str1,str2引用的是同一个变量
+         所有这里的str1,str2引用的是同一个变量,常量池的概念，保证字符串常量只会有一个
           */
         if (str1 == str2) {
             System.out.println("str1==str2 is true");
