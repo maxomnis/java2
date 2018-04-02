@@ -30,6 +30,11 @@ class A
     {
         return true;
     }
+
+    public void say()
+    {
+        System.out.println("in A");
+    }
 }
 
 class B
@@ -37,6 +42,10 @@ class B
     public int hashCode()
     {
         return 1;
+    }
+    public void say()
+    {
+        System.out.println("in C");
     }
 }
 
@@ -53,6 +62,13 @@ class C
         System.out.println("调用C的 equals");
         return true;
     }
+
+    public void say()
+    {
+        System.out.println("in C");
+    }
+
+
 }
 
 
@@ -61,10 +77,10 @@ public class TestHashSet {
     public static void  main(String[] args)
     {
         HashSet books = new HashSet();
-   /*     books.add(new A());
+        books.add(new A());
         books.add(new A());
         books.add(new B());
-        books.add(new B());*/
+        books.add(new B());
         books.add(new C());
         books.add(new C());
 

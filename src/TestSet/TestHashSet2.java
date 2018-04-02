@@ -44,6 +44,7 @@ public class TestHashSet2 {
     public static void main(String[] args)
     {
         HashSet hs = new HashSet();
+        System.out.println();
         hs.add(new R(5));
         hs.add(new R(-3));
         hs.add(new R(9));
