@@ -27,7 +27,7 @@ public class TestFileVisitor {
                 return FileVisitResult.CONTINUE;
             }
 
-            //
+            //所有的文件都被访问完之后，触发
             @Override
             public FileVisitResult postVisitDirectory(Path dir, IOException e)
                       throws IOException
