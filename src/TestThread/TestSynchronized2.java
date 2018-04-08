@@ -36,7 +36,7 @@ class Account2 {
     public synchronized void draw(double drawAmount) {
         //如果余额大于取钱
         if (this.amount >= drawAmount) {
-            System.out.println(getName() + "取钱成功，吐出钞票" + drawAmount);
+            System.out.println(Thread.currentThread().getName()+"从"+getName() + "取钱成功，吐出钞票" + drawAmount);
             try {
                 Thread.sleep(1);
             } catch (Exception e) {
@@ -44,9 +44,9 @@ class Account2 {
             }
 
             this.amount -= drawAmount;
-            System.out.println("余额为" + this.amount);
+            System.out.println(Thread.currentThread().getName()+"从"+getName() +"余额为" + this.amount);
         } else {
-            System.out.println("取钱失败,余额不足" + this.amount);
+            System.out.println(Thread.currentThread().getName()+"从"+getName() +"取钱失败,余额不足" + this.amount);
         }
     }
 }
