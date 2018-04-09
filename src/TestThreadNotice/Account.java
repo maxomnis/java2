@@ -62,7 +62,7 @@ public class Account {
                 //将标示账户是否已有存款的标志设置为false
                 flag = false;
 
-                //唤醒其他线程
+                //唤醒其他所有在等待此监视器的线程
                 notifyAll();
             }
         }catch (InterruptedException e)
