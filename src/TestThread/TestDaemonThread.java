@@ -29,7 +29,7 @@ public class TestDaemonThread extends  Thread{
             System.out.println(Thread.currentThread().getName()+" "+i);
         }
 
-        //调用sleep，让线程暂停1s
+        //调用sleep，让线程暂停1s,守护线程执行到1000才结束
         //Thread.sleep(1000);
 
 
